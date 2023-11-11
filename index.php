@@ -1,4 +1,6 @@
-
+<?php
+    include "scripts/verifylogged.php";
+?>
 
 
 <!DOCTYPE html>
@@ -56,6 +58,7 @@
     </section>
     <section id="player-cards">
       <!-- Player cards for the game -->
+      <?php include "scripts/loadcharcards.php"; ?>
     </section>
     
     <footer id="footer">
