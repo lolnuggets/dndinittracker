@@ -45,14 +45,12 @@
     <section id="view-selection">
         <a href="playerview">
           <div class="custom-button">
-              <img src="resources/player.jpg" alt="Player Image">
               <h2>Player View</h2>
               <p>Initiative tracker frontend.</p>
           </div>
         </a>
         <a href="dmview">
           <div class="custom-button">
-              <img src="resources/dm.jpg" alt="DM Image">
               <h2>DM View</h2>
               <p>Initiative tracker backend.</p>
           </div>
