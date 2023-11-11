@@ -32,4 +32,4 @@
 	}
 
 
-	echo "<script>window.location = 'http://localhost/dndinittracker/login'</script>";
+	echo "<script>window.location = '../login'</script>";
