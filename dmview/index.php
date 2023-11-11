@@ -130,7 +130,7 @@
                 <button type="submit" id="api-submit" name="insert-api">Submit</button>
             </form>
         </div>
-        <div class="msg-box" style="width:500px;display:inline-block;vertical-align:top;">
+        <div class="msg-box" style="width:350px;display:inline-block;vertical-align:top;">
             <h2>Game controls</h2>
             <form action="../scripts/dmcontrols.php" method="post">
                 <h3 style="margin-bottom:2px"> battle controls </h3>
