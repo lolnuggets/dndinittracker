@@ -2,11 +2,11 @@
 Initiative Tracker for DND
 
 # CONTENTS -
-1  About
-2  Features
-3  Changelog
-4  Scripts
-5  External Resources Used
+1- About<br>
+2- Features<br>
+3- Changelog<br>
+4- Scripts<br>
+5- External Resources Used
 
 # ABOUT-------------------------
 
@@ -29,41 +29,41 @@ Initial release of the project, all pages, scripts, resources created.
 
 ### Added
 
-- (index.php)[/index.php]
+- [index.php](/index.php)<br>
   Created as home page
 
-- (characters/index.php)[/characters/index.php]
+- [characters/index.php](/characters/index.php)<br>
   Created as character creation/selection page
 
-- (info/index.php)[/info/index.php]
+- [info/index.php)](/info/index.php)<br>
   Created as character view page
   
-- (playerview/index.php)[/playerview/index.php]
+- [playerview/index.php](/playerview/index.php)<br>
   Created as frontend
   
-- (dmview/index.php)[/dmview/index.php]
+- [dmview/index.php](/dmview/index.php)<br>
   Created as backend
 
-- (login/index.php)[/login/index.php]
+- [login/index.php](/login/index.php)<br>
   Created as login page
 
-- (scripts)[/scripts]
+- [scripts](/scripts)<br>
   Created and saturated with all nessecary scripts
   
  
 ### Changed
   
-- scripts
+- [scripts](/scripts)<br>
   Changed the db.php script and updated the database.
  
 ### Fixed
  
-- All pages
+- All pages<br>
   Corrected favicon.ico location and index.php
-- All pages
+- All pages<br>
   Edited signout to redirect to correct page
 
-## FEATURES----------------------
+# FEATURES----------------------
 
 #### index.php
 1. View all created characters
@@ -130,7 +130,7 @@ Initial release of the project, all pages, scripts, resources created.
 2. Does not set cookies if password is invalid
 3. Sets if valid and redirects
 
-## SCRIPTS-----------------------
+# SCRIPTS-----------------------
 
 ### db.php
 Used to initialize the database to edit
@@ -254,7 +254,7 @@ Handles signout and clears cookies
 Present on every page and makes sure the user is logged in with a valid account
 and valid perms
 
-## EXTERNAL-RESOURCES-USED-------
+# EXTERNAL-RESOURCES-USED-------
 
 ### XAAMP
 Used in creating a local sql database and creating a local serverside website
@@ -268,16 +268,16 @@ Used in viewing and editing code for the website
 ### OPERA GX
 Used in viewing website and researching solutions
 
-### DND 5E API (NO ACCOUNT NEEDED)[https://www.dnd5eapi.co]
+### DND 5E API ([NO ACCOUNT NEEDED](https://www.dnd5eapi.co))
 
-### MIDJOURNEY *DISCORD ACCOUNT)[https://www.midjourney.com/home?callbackUrl=%2Fexplore]
+### MIDJOURNEY ([DISCORD ACCOUNT](https://www.midjourney.com/home?callbackUrl=%2Fexplore))
 Used in resource creation
 
-### GODADDY (gpy62tzb26pu6)[https://sso.godaddy.com/?realm=idp&app=cart&path=/checkoutapi/v1/redirects/login]
+### GODADDY ([gpy62tzb26pu6](https://sso.godaddy.com/?realm=idp&app=cart&path=/checkoutapi/v1/redirects/login))
 Used in aquiring domain dndhoi.com
 
-### HEROKU (bhnzwmvhq1gu5)[https://id.heroku.com/login]
+### HEROKU ([bhnzwmvhq1gu5](https://id.heroku.com/login))
 Used in hosting of website
 
-### AMAZON AWS (3ve3tf18fxjjm)[https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_e662f0077debafcf&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=sdC1gfMfvpZrwaP5zbRiCG2aKM8aMSrFkPCUYfjWvvM&code_challenge_method=SHA-256]
+### AMAZON AWS ([3ve3tf18fxjjm](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_e662f0077debafcf&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=sdC1gfMfvpZrwaP5zbRiCG2aKM8aMSrFkPCUYfjWvvM&code_challenge_method=SHA-256))
 Used in hosting database
