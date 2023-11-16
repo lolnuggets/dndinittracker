@@ -265,18 +265,18 @@ Used in viewing and editing sql database
 ### SUBLIME
 Used in viewing and editing code for the website
 
-### DND 5E API ((NO ACCOUNT NEEDED)[https://www.dnd5eapi.co])
+### DND 5E API ( (NO ACCOUNT NEEDED)[https://www.dnd5eapi.co] )
 
-### MIDJOURNEY (DISCORD ACCOUNT[https://www.midjourney.com/home?callbackUrl=%2Fexplore])
+### MIDJOURNEY ( DISCORD ACCOUNT[https://www.midjourney.com/home?callbackUrl=%2Fexplore] )
 Used in resource creation
 
 ### OPERA GX
 Used in viewing website and researching solutions
 
-### GODADDY ((gpy62tzb26pu6)[https://sso.godaddy.com/?realm=idp&app=cart&path=/checkoutapi/v1/redirects/login])
+### GODADDY ( (gpy62tzb26pu6)[https://sso.godaddy.com/?realm=idp&app=cart&path=/checkoutapi/v1/redirects/login] )
 Used in aquiring domain dndhoi.com
 
-### HEROKU ((bhnzwmvhq1gu5)[https://id.heroku.com/login])
+### HEROKU ( (bhnzwmvhq1gu5)[https://id.heroku.com/login] )
 Used in hosting of website
 
 ### AMAZON AWS ((3ve3tf18fxjjm)[https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_e662f0077debafcf&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=sdC1gfMfvpZrwaP5zbRiCG2aKM8aMSrFkPCUYfjWvvM&code_challenge_method=SHA-256])
