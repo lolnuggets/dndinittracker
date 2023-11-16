@@ -269,6 +269,7 @@ Used in viewing and editing code for the website
 Used in viewing website and researching solutions
 
 ### DND 5E API ([NO ACCOUNT NEEDED](https://www.dnd5eapi.co))
+Used for generating custom stat block for api creatures
 
 ### MIDJOURNEY ([DISCORD ACCOUNT](https://www.midjourney.com/home?callbackUrl=%2Fexplore))
 Used in resource creation
