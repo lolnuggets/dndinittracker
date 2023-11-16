@@ -10,4 +10,4 @@ if (isset($_COOKIE['password'])) {
     setcookie('password', '', -1, '/'); 
 }
 
-echo "<script>window.location.href = 'http://localhost/dndinittracker/login'</script>";
+echo "<script>window.location.href = 'dndhoi.com/login'</script>";
