@@ -23,6 +23,15 @@ This website is currently being hosted at [www.dndhoi.com](www.dndhoi.com)
 
 # CHANGELOG---------------------
 
+## [1.1.0] - 11-18-2023
+  
+Small update add color gradient to the status of a player.
+
+### Changed
+  
+- [playerview/index.php](/playerview/index.php)<br>
+  Added a color gradient to player status.
+
 ## [1.0.0] - 11-15-2023
   
 Initial release of the project, all pages, scripts, resources created.

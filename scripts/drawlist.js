@@ -19,6 +19,54 @@ function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function getColorAtPercent(percent) {
+	// guard for edge cases
+	if (percent > 1)
+		percent = 1;
+	if (percent < 0)
+		percent = 0;
+
+	// start of gradient
+	var start = {
+		red : 59,
+		green : 156,
+		blue : 59
+	}
+
+	// end for gradient
+	var stop = {
+		red : 143,
+		green : 63,
+		blue : 63
+	}
+
+	var rgb = {
+		red : Math.floor((percent * start.red) + ( (1-percent) * stop.red)),
+		green : Math.floor((percent * start.green) + ( (1-percent) * stop.green)),
+		blue : Math.floor((percent * start.blue) + ( (1-percent) * stop.blue))
+	}
+
+	console.log("Percent : " + percent + ", rgb: " + rgb.red + ", " + rgb.green + ", " + rgb.blue);
+
+	return rgbToHex(rgb.red, rgb.green, rgb.blue);
+}
+
+function rgbToHex(r, g, b) {
+  // Ensure that the values are in the valid range (0 to 255)
+  r = Math.min(255, Math.max(0, r));
+  g = Math.min(255, Math.max(0, g));
+  b = Math.min(255, Math.max(0, b));
+
+  // Convert the values to hexadecimal and concatenate them
+  const hexR = r.toString(16).padStart(2, '0');
+  const hexG = g.toString(16).padStart(2, '0');
+  const hexB = b.toString(16).padStart(2, '0');
+
+  // Combine the hex values
+  return `#${hexR}${hexG}${hexB}`;
+}
+
+
 var response;
 
 function drawList() {
@@ -62,6 +110,7 @@ function drawList() {
 				const data = val.split("\\");
 				// calculate status
 				var condition = "";
+				var color = "";
 				var percenthp = parseInt(data[1]) / parseInt(data[4]);
 				if (percenthp >= 1)
 					condition = "healthy";
@@ -79,6 +128,8 @@ function drawList() {
 					condition = "fatal damage";
 				else if (percenthp <= 0.0)
 					condition = "dead";
+
+				color+=getColorAtPercent(percenthp);
 
 				// drawing function
 				let curitem = document.createElement("div");
@@ -162,7 +213,7 @@ function drawList() {
 					let status = document.createElement("div");
 					status.className = "status";
 					status.innerHTML = condition;
-					status.style= editstyle;
+					status.style= "color: "+color+";" + editstyle;
 					curitem.appendChild(status);
 
 					let hp = document.createElement("div");
@@ -207,7 +258,7 @@ function drawList() {
 					let status = document.createElement("div");
 					status.className = "status";
 					status.innerHTML = condition;
-					status.style= editstyle;
+					status.style= "color: "+color+";" + editstyle;
 					curitem.appendChild(status);
 
 					let hp = document.createElement("div");
