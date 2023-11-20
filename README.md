@@ -23,14 +23,35 @@ This website is currently being hosted at [www.dndhoi.com](www.dndhoi.com)
 
 # CHANGELOG---------------------
 
-## [1.1.0] - 11-18-2023
+## [1.1.0] - 11-20-2023
   
-Small update add color gradient to the status of a player.
+Attempting to refactor all code to limit PHP usage and swap to JS for flexibility. Other small QOL changes.
+
+### Added
+
+- [scripts](/scripts)<br>
+  Created create-cards.js intended to create cards on character page and index page
 
 ### Changed
   
 - [playerview/index.php](/playerview/index.php)<br>
-  Added a color gradient to player status.
+  Added a color gradient to player status
+
+- [scripts](/scripts)<br>
+  Replaced loadcharcards with new php get-players returns JSON for ajaxing
+ 
+### Fixed
+ 
+- [scripts](/scripts)<br>
+  signout redirecting incorrectly/not relative page wise in script verifylogged.php
+
+### Removed
+ 
+- [scripts](/scripts)<br>
+  signout.php
+
+- [scripts](/scripts)<br>
+  loadcharcards.php
 
 ## [1.0.0] - 11-15-2023
   

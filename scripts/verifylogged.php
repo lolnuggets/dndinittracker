@@ -1,8 +1,9 @@
 <?php
 
 	include "db.php";
-
-	$password = $_COOKIE['password'];
+	$password = 'sdf';
+	if (isset($_COOKIE['password']))
+		$password = $_COOKIE['password'];
 
 	if($_COOKIE['loggedperms'] == "player") {
 
@@ -31,5 +32,4 @@
 	    }
 	}
 
-
-	echo "<script>window.location = '../login'</script>";
+	echo "<script>window.location.href = 'http://'+window.location.hostname + '/login'</script>";

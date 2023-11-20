@@ -27,18 +27,18 @@
 
                 echo "<div><a>". $player ."</a> </div>"
             ?>
-            <ul>
+            <ul id="links">
                 <li><a href="#">Home</a></li>
                 <li><a href="characters">Characters</a></li>
                 <li><a href="info">Info</a></li>
                 <?php
-                    if ($_COOKIE['loggedperms'] == "player")
+                    if ($_COOKIE['loggedperms'] = "player")
                         $perms = "player";
                     if ($_COOKIE['loggedperms'] == "dm")
                         $perms = "dm";
                     echo "<li><a>Currently signed in as: " . $perms . "</a></li>";
                 ?>
-                <li><a href="scripts/signout.php">Sign Out</a></li>
+                <script src="scripts/signoutbutton.js"></script>
             </ul>
         </nav>
     </header>
@@ -58,7 +58,7 @@
     </section>
     <section id="player-cards">
       <!-- Player cards for the game -->
-      <?php include "scripts/loadcharcards.php"; ?>
+      <script src="scripts/create-cards.js"></script>
     </section>
     
     <footer id="footer">
