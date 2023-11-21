@@ -1,11 +1,15 @@
 <?php
 
 	include "db.php";
-	$password = 'sdf';
+	$password = '';
 	if (isset($_COOKIE['password']))
 		$password = $_COOKIE['password'];
 
-	if($_COOKIE['loggedperms'] == "player") {
+	$loggedperms = "";
+	if (isset($_COOKIE['loggedperms']))
+		$loggedperms = $_COOKIE['loggedperms'];
+
+	if($loggedperms == "player") {
 
 		$sql = "select player from login";
 		$result = $con->query($sql);
@@ -18,7 +22,7 @@
 	        }
 	    }
 
-	} else if ($_COOKIE['loggedperms'] == "dm") {
+	} else if ($loggedperms == "dm") {
 
 		$sql = "select dm from login";
 		$result = $con->query($sql);
@@ -32,4 +36,12 @@
 	    }
 	}
 
-	echo "<script>window.location.href = 'http://'+window.location.hostname + '/login'</script>";
+	echo "<script>
+			function getHost() {
+			    let hostname = window.location.hostname;
+			    if (hostname == \"localhost\")
+			        hostname += \"/dndinittracker\";
+			    return hostname;
+			}
+			window.location.href = 'http://'+ getHost() + '/login';
+		</script>";

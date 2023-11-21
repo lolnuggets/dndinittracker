@@ -1,8 +1,8 @@
 <?php
-	// script for adding a character through a posted form on page CHARACTERS
-	include "db.php";
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		// script for adding a character through a posted form on page CHARACTERS
+		include "db.php";
 		
 		$id = $_POST["name"];
 		$lvl = $_POST["level"];
@@ -15,7 +15,15 @@
 
 		$sql = "insert into characterinfo values ('" . $id . "'," . $lvl . "," . $mhp . "," . $ac . "," . $pper . "," . $pinv . "," . $pins . "," . $dv . ")";
 		$result = $con->query($sql);
+		$con->close();
 	}
 
-$con->close();
-echo "<script>window.location = '../characters'</script>";
+echo "<script>
+			function getHost() {
+			    let hostname = window.location.hostname;
+			    if (hostname == \"localhost\")
+			        hostname += \"/dndinittracker\";
+			    return hostname;
+			}
+			window.location.href = 'http://'+ getHost() + '/characters';
+		</script>";

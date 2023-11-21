@@ -1,5 +1,5 @@
 <?php
-    include "scripts/verifylogged.php";
+    include "scripts/verify-logged.php";
 ?>
 
 
@@ -38,7 +38,7 @@
                         $perms = "dm";
                     echo "<li><a>Currently signed in as: " . $perms . "</a></li>";
                 ?>
-                <script src="scripts/signoutbutton.js"></script>
+                <script src="scripts/signout-button.js"></script>
             </ul>
         </nav>
     </header>

@@ -1,5 +1,5 @@
 <?php
-    include "../scripts/verifylogged.php";
+    include "../scripts/verify-logged.php";
 ?>
 
 
@@ -10,7 +10,6 @@
     <title>Hearts of Iron</title>
     <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <body class="container">
     <header id="header">
         <nav>
@@ -28,7 +27,7 @@
 
                 echo "<div><a>". $player ."</a> </div>"
             ?>
-            <ul>
+            <ul id="links">
                 <li><a href="../">Home</a></li>
                 <li><a href="#">Characters</a></li>
                 <li><a href="../info">Info</a></li>
@@ -39,19 +38,18 @@
                         $perms = "dm";
                     echo "<li><a>Currently signed in as: " . $perms . "</a></li>";
                 ?>
-                <li><a href="../scripts/signout.php">Sign Out</a></li>
+                <script src="../scripts/signout-button.js"></script>
             </ul>
         </nav>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <section id="player-cards">
       <!-- Player cards for the game -->
-      <?php include "../scripts/loadcharcards.php"; ?>
+      <script src="../scripts/create-cards.js"></script>
     </section>
 
     <section id="select-player-card">
         <!-- form to select a player card -->
-        <form action="../scripts/selectchar.php" method="post">
+        <form action="../scripts/select-character.php" method="post">
             <label for="char-selector">Choose a player:</label>
             <select id="char-selector" name="selected">
                 <option value="">None</option>
@@ -65,7 +63,7 @@
         <!-- position to add new cards -->
 
         <h2>Create a character</h2>
-        <form action="../scripts/addcharacter.php" method="post">
+        <form action="../scripts/add-character.php" method="post">
             <label for="name">Name: </label>
             <input id="name" type="text" name="name" placeholder="Name" required> <br>
 

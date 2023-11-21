@@ -5,6 +5,13 @@ function setCookie(cookieName, cookieValue, expirationDays) {
   document.cookie = cookieName + '=' + cookieValue + '; ' + expires + '; path=/';
 }
 
+function getHost() {
+	let hostname = window.location.hostname;
+	if (hostname == "localhost")
+		hostname += "/dndinittracker";
+	return hostname;
+}
+
 function fetch() {
 	return new Promise((resolve, reject)=> {
 		const xhr = new XMLHttpRequest();
@@ -19,7 +26,7 @@ function fetch() {
 			}
 		}
 
-		xhr.open('GET', 'scripts/get-players.php', true);
+		xhr.open('GET', 'http://'+getHost()+'/scripts/get-players.php', true);
 		xhr.send();
 	});
 }	
@@ -67,9 +74,7 @@ async function addcards() {
 			pdv.innerHTML = " DV. <br> " + value.passives.darkvision + "ft";
 			card.appendChild(pdv);
 
-			console.log(window.location.pathname);
-
-			if (window.location.pathname == "characters" || window.location.pathname == "dndinittracker/characters") {
+			if (window.location.pathname == "/characters/" || window.location.pathname == "/dndinittracker/characters/") {
 				let button = document.createElement("div");
 				button.className = "custom-button";
 				button.style = "width:200px;height:50px;padding:10px";
