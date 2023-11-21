@@ -40,10 +40,16 @@ Attempting to refactor all code to limit PHP usage and swap to JS for flexibilit
 - [scripts](/scripts)<br>
   Replaced loadcharcards with new php get-players returns JSON for ajaxing
  
+- [scripts](/scripts)<br>
+  Renamed scripts to add '-' character instead of having no break
+
+- [scripts](/scripts)<br>
+  Updated relevant scripts and made redirecting more streamlined
+
 ### Fixed
  
 - [scripts](/scripts)<br>
-  signout redirecting incorrectly/not relative page wise in script verifylogged.php
+  signout redirecting incorrectly/not relative page wise in script verify-logged.php
 
 ### Removed
  

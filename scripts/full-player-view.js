@@ -313,4 +313,6 @@ if (getCookie("loggedperms") === "dm") {
   }
   xhr.open("GET", "../scripts/getchars.php", true); // Replace with your server endpoint
   xhr.send();
+} else if (getCookie("selected") !== null) {
+  genCard(getCookie("selected"));
 }

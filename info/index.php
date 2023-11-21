@@ -1,5 +1,5 @@
 <?php
-    include "../scripts/verifylogged.php";
+    include "../scripts/verify-logged.php";
 ?>
 
 
@@ -27,25 +27,25 @@
 
                 echo "<div><a>". $player ."</a> </div>"
             ?>
-            <ul>
+            <ul id="links">
                 <li><a href="../">Home</a></li>
                 <li><a href="../characters">Characters</a></li>
                 <li><a href="#">Info</a></li>
                 <?php
-                    if ($_COOKIE['loggedperms'] == "player")
+                    if ($_COOKIE['loggedperms'] = "player")
                         $perms = "player";
                     if ($_COOKIE['loggedperms'] == "dm")
                         $perms = "dm";
                     echo "<li><a>Currently signed in as: " . $perms . "</a></li>";
                 ?>
-                <li><a href="../scripts/signout.php">Sign Out</a></li>
+                <script src="../scripts/signout-button.js"></script>
             </ul>
         </nav>
     </header>
     <section id="view-current-player">
-        <script src="../scripts/editorajax.js"></script>
         <!-- view current card-->
-        <?php include "../scripts/loadcharview.php"; ?>
+        <script src="../scripts/full-player-view.js"></script>
+        
     </section>
     
     <section id="edit-player-card">
